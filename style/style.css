@@ -172,7 +172,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    background-color: white;
+    background-color: #F9F9F9;
 }
 
 .slide .header {
@@ -2748,6 +2748,10 @@ body {
 
     .payer .overflow_box {
         padding: 0 0 150px;
+    }
+     slide .content_overflow
+    {
+        padding: 0 0 200px;
     }
 
     .slide8 .content_overflow {

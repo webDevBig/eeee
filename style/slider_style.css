@@ -170,20 +170,10 @@
     position: fixed;
 }
 
-.slide,
-.slide-container {
-    /*    overflow: auto;*/
-}
-
 .slider-for .slick-list {
     overflow: inherit;
     position: relative;
     z-index: 10;
-}
-
-.slide-container {
-    /*    overflow: auto;*/
-
 }
 
 .swiper-container {
@@ -201,7 +191,6 @@
     }
 
     .slide-btn {
-/*        height: 112px !important;*/
         width: 100% !important;
     }
 
@@ -243,7 +232,6 @@
         padding: 0;
         box-shadow: none;
         height: 594px;
-        /*        border-bottom: 1px solid rgba(0, 0, 0, 0.11);*/
     }
 
     .slide-container {
@@ -292,5 +280,3 @@
         height: 95px;
     }
 }
-
-@media all and (max-width: 300px) {}
