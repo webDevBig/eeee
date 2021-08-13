@@ -1412,10 +1412,6 @@
             },
             navigation: {
                 prevEl: ".annuler"
-            },
-            keyboard: {
-                enabled: true,
-                onlyInViewport: false
             }
         });
         /* thumbs */
@@ -1427,10 +1423,6 @@
             slideToClickedSlide: true,
             mousewheel: true,
             loop: false,
-            keyboard: {
-                enabled: true,
-                onlyInViewport: false
-            },
             breakpoints: {
                 320: {
                     slidesPerView: 3,
@@ -1459,13 +1451,6 @@
         /* set conteoller  */
         galleryTop.controller.control = galleryThumbs;
         galleryThumbs.controller.control = galleryTop;
-        //        
-        //         var annuler = document.querySelectorAll('.annuler');
-        //        [].forEach.call(annuler, function(el) {
-        //            el.onclick = function(e) {
-        //                galleryThumbs.goTo('prevEl');
-        //            }
-        //        })
     </script>
     <script src="js/vanilla.js"></script>
 </body></html>
