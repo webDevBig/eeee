@@ -1611,7 +1611,8 @@ body {
 .payer .desctop_btn,
 .slide1 .number_img_box,
 .desctop_hr,
-.header, .slide1 .content {
+.header,
+.slide1 .content {
     display: none
 }
 
@@ -1862,6 +1863,10 @@ body {
     .slide {
         align-items: center;
         padding: 0px 0 25px
+    }
+
+    .slide .content {
+        display: flex;
     }
 
     .slide1 .format_plaque {
@@ -2749,8 +2754,8 @@ body {
     .payer .overflow_box {
         padding: 0 0 150px;
     }
-     slide .content_overflow
-    {
+
+    slide .content_overflow {
         padding: 0 0 200px;
     }
 
