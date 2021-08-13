@@ -145,13 +145,13 @@ body {
 }
 
 .btn_box .grey_btn:hover {
-    background-color: #41CCA2;
+    background-color: #4F4F4F;
     filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25))
 }
 
 .btn_box .grey_btn:active,
 .btn_box .grey_btn:focus {
-    background-color: #333;
+    background-color: #333333;
     filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.25))
 }
 
