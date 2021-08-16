@@ -184,12 +184,19 @@
 .secondaty_slider_box .btn_box {
     display: none;
 }
+/*
+
+.swiper-container-vertical > .swiper-wrapper {
+    flex-direction: row;
+}
+*/
 
 @media all and (min-width: 1025px) {
-   .slider-for .swiper-slide-active
-    {
+
+    .slider-for .swiper-slide-active {
         z-index: 1;
     }
+
     .slider-nav .slick-slide {
         max-width: 100% !important;
     }
@@ -265,8 +272,8 @@
         padding: 40px 0;
         display: flex;
     }
-    .for_desctop .slide .btn_box
-    {
+
+    .for_desctop .slide .btn_box {
         border: none;
         background-color: transparent;
     }
