@@ -184,6 +184,7 @@
 .secondaty_slider_box .btn_box {
     display: none;
 }
+
 /*
 
 .swiper-container-vertical > .swiper-wrapper {
@@ -215,7 +216,7 @@
         outline: none;
     }
 
-    .swiper-slide-active.slide-btn {}
+    
 
     .slide-btn .border_desctop_white {
         background-color: transparent;
@@ -227,7 +228,7 @@
         background: linear-gradient(180deg, #5B40D7 -4.17%, #E85F62 104.49%);
     }
 
-    .slide-btn .border_desctop {
+    .slide-btn .hover_bg {
         width: 97%;
         height: 102%;
         padding: 0;
@@ -237,6 +238,9 @@
         justify-content: center;
         margin: -1px auto;
         background-color: white;
+    }
+    .swiper-slide-active.slide-btn .border_desctop {
+        background-color: rgba(91, 64, 215, 0.1);
     }
 
     .slider-nav {
