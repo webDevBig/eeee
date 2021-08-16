@@ -1649,6 +1649,16 @@ body {
 
 @media all and (min-width:1025px) {
 
+    .btn_box .btn,
+    .open_select_list,
+    .info_mess {
+        cursor: pointer;
+    }
+
+    .swiper-container-vertical > .swiper-pagination-bullets {
+        display: none;
+    }
+
     .slider_section {
         flex-direction: row-reverse
     }
@@ -1863,13 +1873,13 @@ body {
 
     .main_content {
         display: flex;
+        margin: 0 auto;
         overflow: hidden;
         height: calc(100vh - 80px)
     }
 
     .slide {
         align-items: center;
-        /*        padding: 0px 0 25px*/
     }
 
     .slide .content {
@@ -2289,6 +2299,23 @@ body {
     }
 }
 
+@media all and (min-width:1921px) {
+
+    .slider-for {
+        max-width: 1280px;
+    }
+
+    .header_row {
+        max-width: 1940px;
+        padding: 0 80px;
+    }
+
+    .main_content {
+        margin: 0 auto;
+        justify-content: center;
+    }
+}
+
 @media all and (max-width:1366px) and (min-width:1110px) {
 
     .slide6 .importer,
@@ -2469,7 +2496,7 @@ body {
     }
 
     .slide {
-/*        padding: 0px 0 25px*/
+        /*        padding: 0px 0 25px*/
     }
 }
 
