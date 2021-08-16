@@ -38,722 +38,247 @@
     <!-- Swiper -->
     <div class="main_content">
         <div class="slider_section active">
-            <main class="swiper-container gallery slider-for">
-                <div class="swiper-wrapper ">
-                    <div class="swiper-slide slide slide1">
-                        <div class="header">AVANT DE COMMENCER...</div>
-                        <div class="box box_info">
-                            <p class="text">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla.</p>
+            <div class="for_desctop">
+                <div class="content">
+                    <div class="number_img_box">
+                        <div class="number_format_box"> <img alt="" src="img/number_format1.png" class="number_icon">
+                            <div class="text_box">
+                                <div class="circle" id="main_circle"></div>
+                                <p>PLAQUE HOMOLOGUÉE</p>
+                            </div>
                         </div>
-                        <div class="content">
-                            <div class="number_img_box">
-                                <div class="number_format_box"> <img alt="" src="img/number_format1.png" class="number_icon">
-                                    <div class="text_box">
-                                        <div class="circle"></div>
-                                        <p>PLAQUE HOMOLOGUÉE</p>
+                    </div>
+                </div>
+
+                <main class="swiper-container gallery slider-for">
+                    <div class="swiper-wrapper ">
+                        <div class="swiper-slide slide slide1">
+                            <div class="header">AVANT DE COMMENCER...</div>
+                            <div class="box box_info">
+                                <p class="text">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                            </div>
+                            <div class="content_overflow">
+                                <div class="box box_registration"> <span class="h1">Votre immatriculation</span>
+                                    <p class="text">Tapez votre numéro d’immatriculation ou votre texte (max. XX caractères)</p>
+                                    <div class="number_box"> <input type="text" class="number_text" placeholder="AA-123-AA"></div>
+                                </div>
+                                <div class="box format_plaque"> <span class="h1">Format de plaque</span>
+                                    <p class="text">Choisissez l’un des deux formats standards</p>
+                                    <div class="format_box">
+                                        <div class="format format1 active">
+                                            <div class="img_box"> <img alt="" src="img/format1.svg"></div>
+                                        </div>
+                                        <div class="format format2">
+                                            <div class="img_box"> <img alt="" src="img/format2.svg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="format_info_box"> <span class="h3">Plaque Auto</span>
+                                        <p class="info">Format Standard</p>
+                                        <select name="season-select" id="default-select4">
+                                            <option value="52 x 11cm">52 x 11cm</option>
+                                            <option value="40 x 40cm">40 x 40cm</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="content_overflow">
-                            <div class="box box_registration"> <span class="h1">Votre immatriculation</span>
-                                <p class="text">Tapez votre numéro d’immatriculation ou votre texte (max. XX caractères)</p>
-                                <div class="number_box"> <input type="text" class="number_text" placeholder="AA-123-AA"></div>
-                            </div>
-                            <div class="box format_plaque"> <span class="h1">Format de plaque</span>
-                                <p class="text">Choisissez l’un des deux formats standards</p>
-                                <div class="format_box">
-                                    <div class="format format1 active">
-                                        <div class="img_box"> <img alt="" src="img/format1.svg"></div>
-                                    </div>
-                                    <div class="format format2">
-                                        <div class="img_box"> <img alt="" src="img/format2.svg"></div>
+                        <div class="swiper-slide slide slide2">
+
+                            <div class="content">
+                                <div class="number_img_box"> <img class="close" alt="" src="img/OUT.svg">
+                                    <div class="number_format_box"> <img alt="" src="img/number_format1.png" class="number_icon">
+                                        <div class="text_box">
+                                            <div class="circle circle_valid1"></div>
+                                            <p>PLAQUE HOMOLOGUÉE</p>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="format_info_box"> <span class="h3">Plaque Auto</span>
-                                    <p class="info">Format Standard</p>
-                                    <select name="season-select" id="default-select4">
-                                        <option value="52 x 11cm">52 x 11cm</option>
-                                        <option value="40 x 40cm">40 x 40cm</option>
+                                <div class="price_section">
+                                    <div class="clm">
+                                        <p class="text">LIVRAISON ESTIMÉE</p> <span class="h1">13 Septembre 2021</span>
+                                    </div>
+                                    <div class="clm">
+                                        <p class="text">PRIX TOTAL</p> <span class="h1">1000,00€</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content_overflow">
+                                <div class="box"> <span class="h1">Couleur du numéro</span>
+                                    <div class="select_box">
+                                        <div class="color_box"></div>
+                                        <p class="text">: Couleurs homologuées</p>
+                                    </div>
+                                    <div class="splide color_slider" id="color_slider_slide2">
+                                        <div class="splide__track">
+
+                                            <ul class="splide__list">
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1" style="background: #78D358">
+                                                        <div class="border_box" style="background: white"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #E0E0E0"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #F2994A"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #2D9CDB"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: black"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #E0E0E0"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #EB8383"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #4F4F4F"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #5B40D7"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #E0E0E0"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #41CCA2"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #E85F62"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #56CCF2"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #BB6BD9"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #BDBDBD"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #27AE60"></div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box"> <span class="h1">Police d’écriture</span>
+                                    <div class="select_box">
+                                        <div class="color_box"></div>
+                                        <p class="text">: Polices homologuées</p>
+                                    </div> <select name="season-select" id="default-select">
+                                        <option value="Chalkduster">Chalkduster</option>
+                                        <option value="Inder">Inder</option>
+                                        <option value="Montserrat">Montserrat Light</option>
+                                        <option value="Roboto">Roboto Regular</option>
+                                        <option value="Times New Roman">Times New Roman</option>
                                     </select>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide slide slide2">
+                        <div class="swiper-slide slide slide3">
 
-                        <div class="content">
-                            <div class="number_img_box"> <img class="close" alt="" src="img/OUT.svg">
-                                <div class="number_format_box"> <img alt="" src="img/number_format1.png" class="number_icon">
-                                    <div class="text_box">
-                                        <div class="circle circle_valid1"></div>
-                                        <p>PLAQUE HOMOLOGUÉE</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="price_section">
-                                <div class="clm">
-                                    <p class="text">LIVRAISON ESTIMÉE</p> <span class="h1">13 Septembre 2021</span>
-                                </div>
-                                <div class="clm">
-                                    <p class="text">PRIX TOTAL</p> <span class="h1">1000,00€</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="content_overflow">
-                            <div class="box"> <span class="h1">Couleur du numéro</span>
-                                <div class="select_box">
-                                    <div class="color_box"></div>
-                                    <p class="text">: Couleurs homologuées</p>
-                                </div>
-                                <div class="splide color_slider" id="color_slider_slide2">
-                                    <div class="splide__track">
-
-                                        <ul class="splide__list">
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1" style="background: #78D358">
-                                                    <div class="border_box" style="background: white"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #E0E0E0"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #F2994A"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #2D9CDB"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: black"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #E0E0E0"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #EB8383"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #4F4F4F"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #5B40D7"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #E0E0E0"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #41CCA2"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #E85F62"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #56CCF2"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #BB6BD9"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #BDBDBD"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #27AE60"></div>
-                                                </div>
-                                            </li>
-                                        </ul>
-
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="box"> <span class="h1">Police d’écriture</span>
-                                <div class="select_box">
-                                    <div class="color_box"></div>
-                                    <p class="text">: Polices homologuées</p>
-                                </div> <select name="season-select" id="default-select">
-                                    <option value="Chalkduster">Chalkduster</option>
-                                    <option value="Inder">Inder</option>
-                                    <option value="Montserrat">Montserrat Light</option>
-                                    <option value="Roboto">Roboto Regular</option>
-                                    <option value="Times New Roman">Times New Roman</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide slide slide3">
-
-                        <div class="content">
-                            <div class="number_img_box"> <img class="close" alt="" src="img/OUT.svg">
-                                <div class="number_format_box"> <img alt="" src="img/number_format1.png" class="number_icon">
-                                    <div class="text_box">
-                                        <div class="circle circle_valid"></div>
-                                        <p>PLAQUE HOMOLOGUÉE</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="price_section">
-                                <div class="clm">
-                                    <p class="text">LIVRAISON ESTIMÉE</p> <span class="h1">13 Septembre 2021</span>
-                                </div>
-                                <div class="clm">
-                                    <p class="text">PRIX TOTAL</p> <span class="h1">1000,00€</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="content_overflow">
-                            <div class="box">
-                                <div class="row"> <span class="h1">Montrer la bande</span> <label class="switch"> <input hidden type="checkbox" checked /> <span class="slider round"></span> </label></div>
-                                <div class="row"> <span class="h1">Inverser l’emplacement</span> <label class="switch"> <input hidden type="checkbox" checked /> <span class="slider round"></span> </label></div>
-                            </div>
-                            <div class="box"> <span class="h1">Choisir le pays</span><select name="season-select" id="default-select1">
-                                    <option value="F - France">F - France</option>
-                                    <option value="F - France">F - France</option>
-                                </select></div>
-                            <div class="box pictogramme_box"> <span class="h1">Pictogramme Eurobande</span>
-                                <div class="select_box">
-                                    <p class="text">Format .JPG ou .PNG. | Taille maximale : 2Mo</p>
-                                </div>
-                                <div class="btn_box"> <button class="importer btn_violet">IMPORTER </button> <button class="rechercher btn_violet">RECHERCHER</button></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide slide slide3">
-
-                        <div class="content">
-                            <div class="number_img_box"> <img class="close" alt="" src="img/OUT.svg">
-                                <div class="number_format_box"> <img alt="" src="img/number_format1.png" class="number_icon">
-                                    <div class="text_box">
-                                        <div class="circle circle_valid"></div>
-                                        <p>PLAQUE HOMOLOGUÉE</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="price_section">
-                                <div class="clm">
-                                    <p class="text">LIVRAISON ESTIMÉE</p> <span class="h1">13 Septembre 2021</span>
-                                </div>
-                                <div class="clm">
-                                    <p class="text">PRIX TOTAL</p> <span class="h1">1000,00€</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="content_overflow">
-                            <div class="box">
-                                <div class="row"> <span class="h1">Montrer la bande</span> <label class="switch"> <input hidden type="checkbox" checked /> <span class="slider round"></span> </label></div>
-                                <div class="row"> <span class="h1">Inverser l’emplacement</span> <label class="switch"> <input hidden type="checkbox" checked /> <span class="slider round"></span> </label></div>
-                            </div>
-                            <div class="box"> <span class="h1">Numéro de département</span><select name="season-select" id="default-select2">
-                                    <option value="74 - Haute-Savoie">74 - Haute-Savoie</option>
-                                    <option value="36 - Haute-Savoie">36 - Haute-Savoie</option>
-                                </select></div>
-                            <div class="box pictogramme_box"> <span class="h1">Pictogramme Région</span>
-                                <div class="select_box">
-                                    <p class="text">Format .JPG ou .PNG. | Taille maximale : 2Mo</p>
-                                </div>
-                                <div class="btn_box"> <button class="importer btn_violet">IMPORTER </button> <button class="rechercher btn_violet">RECHERCHER</button></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide slide slide4">
-                        <div class="content">
-                            <div class="number_img_box"> <img class="close" alt="" src="img/OUT.svg">
-                                <div class="number_format_box"> <img alt="" src="img/number_format1.png" class="number_icon">
-                                    <div class="text_box">
-                                        <div class="circle circle_valid2"></div>
-                                        <p>PLAQUE HOMOLOGUÉE</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="price_section">
-                                <div class="clm">
-                                    <p class="text">LIVRAISON ESTIMÉE</p> <span class="h1">13 Septembre 2021</span>
-                                </div>
-                                <div class="clm">
-                                    <p class="text">PRIX TOTAL</p> <span class="h1">1000,00€</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="content_overflow">
-                            <div class="box"> <span class="h1">Couleur de fond : bande gauche</span>
-                                <div class="select_box">
-                                    <div class="color_box color_box1_slide4"></div>
-                                    <p class="text">: Couleurs homologuées</p>
-                                </div>
-                                <div class="splide color_slider" id="color_slider1_slide4">
-                                    <div class="splide__track">
-
-                                        <ul class="splide__list">
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1" style="background: #78D358">
-                                                    <div class="border_box" style="background: white"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #E0E0E0"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #F2994A"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #2D9CDB"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: black"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #E0E0E0"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #EB8383"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #4F4F4F"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #5B40D7"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #E0E0E0"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #41CCA2"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #E85F62"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #56CCF2"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #BB6BD9"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #BDBDBD"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #27AE60"></div>
-                                                </div>
-                                            </li>
-                                        </ul>
-
-
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="box"> <span class="h1">Couleur : initiales pays</span>
-                                <div class="select_box">
-                                    <div class="color_box color_box2_slide4"></div>
-                                    <p class="text">: Couleurs homologuées</p>
-                                </div>
-                                <div class="splide color_slider" id="color_slider2_slide4">
-                                    <div class="splide__track">
-
-                                        <ul class="splide__list">
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1" style="background: #78D358">
-                                                    <div class="border_box" style="background: white"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #E0E0E0"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #F2994A"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #2D9CDB"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: black"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #E0E0E0"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #EB8383"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #4F4F4F"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #5B40D7"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #E0E0E0"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #41CCA2"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #E85F62"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #56CCF2"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #BB6BD9"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #BDBDBD"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #27AE60"></div>
-                                                </div>
-                                            </li>
-                                        </ul>
-
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="swiper-slide slide slide5">
-                        <div class="content">
-                            <div class="number_img_box"> <img class="close" alt="" src="img/OUT.svg">
-                                <div class="number_format_box"> <img alt="" src="img/number_format1.png" class="number_icon">
-                                    <div class="text_box">
-                                        <div class="circle circle_valid3"></div>
-                                        <p>PLAQUE HOMOLOGUÉE</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="price_section">
-                                <div class="clm">
-                                    <p class="text">LIVRAISON ESTIMÉE</p> <span class="h1">13 Septembre 2021</span>
-                                </div>
-                                <div class="clm">
-                                    <p class="text">PRIX TOTAL</p> <span class="h1">1000,00€</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="content_overflow">
-                            <div class="box"> <span class="h1">Couleur de fond : bande gauche</span>
-                                <div class="select_box">
-                                    <div class="color_box color_box1_slide5"></div>
-                                    <p class="text">: Couleurs homologuées</p>
-                                </div>
-                                <div class="splide color_slider" id="color_slider1_slide5">
-                                    <div class="splide__track">
-
-                                        <ul class="splide__list">
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1" style="background: #78D358">
-                                                    <div class="border_box" style="background: white"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #E0E0E0"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #F2994A"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #2D9CDB"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: black"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #E0E0E0"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #EB8383"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #4F4F4F"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #5B40D7"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #E0E0E0"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #41CCA2"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #E85F62"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #56CCF2"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #BB6BD9"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #BDBDBD"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #27AE60"></div>
-                                                </div>
-                                            </li>
-                                        </ul>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="box"> <span class="h1">Couleur : numéro département</span>
-                                <div class="select_box">
-                                    <div class="color_box color_box2_slide5"></div>
-                                    <p class="text">: Couleurs homologuées</p>
-                                </div>
-                                <div class="splide color_slider" id="color_slider2_slide5">
-                                    <div class="splide__track">
-                                        <ul class="splide__list">
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1" style="background: #78D358">
-                                                    <div class="border_box" style="background: white"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #E0E0E0"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #F2994A"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #2D9CDB"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: black"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #E0E0E0"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #EB8383"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #4F4F4F"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #5B40D7"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #E0E0E0"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #41CCA2"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #E85F62"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #56CCF2"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #BB6BD9"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #BDBDBD"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #27AE60"></div>
-                                                </div>
-                                            </li>
-                                        </ul>
-
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="swiper-slide slide slide6">
-                        <div class="content">
-                            <div class="number_img_box"> <img class="close" alt="" src="img/OUT.svg">
-                                <div class="number_format_box"> <img alt="" src="img/number_format1.png" class="number_icon">
-                                    <div class="text_box">
-                                        <div class="circle circle_valid"></div>
-                                        <p>PLAQUE HOMOLOGUÉE</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="price_section">
-                                <div class="clm">
-                                    <p class="text">LIVRAISON ESTIMÉE</p> <span class="h1">13 Septembre 2021</span>
-                                </div>
-                                <div class="clm">
-                                    <p class="text">PRIX TOTAL</p> <span class="h1">1000,00€</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="content_overflow">
-                            <div class="box texting_box"> <span class="h1">Entrez votre texte</span>
-                                <div class="select_box">
-                                    <p class="text">Max 60 caractères</p>
-                                </div>
-                                <div class="textarea_box"><textarea class="textarea"></textarea>
-                                    <div class="bg_box">
-                                        <div class="font_box">
-                                            <div class="a_class"><img alt="" src="img/a.svg"></div> <select name="season-select" id="default-select3">
-                                                <option value="Montserrat">Montserrat</option>
-                                                <option value="Chalkduster">Chalkduster</option>
-                                            </select>
+                            <div class="content">
+                                <div class="number_img_box"> <img class="close" alt="" src="img/OUT.svg">
+                                    <div class="number_format_box"> <img alt="" src="img/number_format1.png" class="number_icon">
+                                        <div class="text_box">
+                                            <div class="circle circle_valid"></div>
+                                            <p>PLAQUE HOMOLOGUÉE</p>
                                         </div>
-                                        <p class="p underline_style"><img alt="" src="img/a.svg"></p>
+                                    </div>
+                                </div>
+                                <div class="price_section">
+                                    <div class="clm">
+                                        <p class="text">LIVRAISON ESTIMÉE</p> <span class="h1">13 Septembre 2021</span>
+                                    </div>
+                                    <div class="clm">
+                                        <p class="text">PRIX TOTAL</p> <span class="h1">1000,00€</span>
                                     </div>
                                 </div>
                             </div>
-                            <hr class="desctop_hr">
-                            <div class="desctop_row">
-                                <div class="box box_gauche"> <span class="h1">Pictogramme Gauche</span>
+                            <div class="content_overflow">
+                                <div class="box">
+                                    <div class="row"> <span class="h1">Montrer la bande</span> <label class="switch"> <input hidden type="checkbox" checked /> <span class="slider round"></span> </label></div>
+                                    <div class="row"> <span class="h1">Inverser l’emplacement</span> <label class="switch"> <input hidden type="checkbox" checked /> <span class="slider round"></span> </label></div>
+                                </div>
+                                <div class="box"> <span class="h1">Choisir le pays</span><select name="season-select" id="default-select1">
+                                        <option value="F - France">F - France</option>
+                                        <option value="F - France">F - France</option>
+                                    </select></div>
+                                <div class="box pictogramme_box"> <span class="h1">Pictogramme Eurobande</span>
                                     <div class="select_box">
                                         <p class="text">Format .JPG ou .PNG. | Taille maximale : 2Mo</p>
                                     </div>
                                     <div class="btn_box"> <button class="importer btn_violet">IMPORTER </button> <button class="rechercher btn_violet">RECHERCHER</button></div>
                                 </div>
-                                <div class="box box_droite"> <span class="h1">Pictogramme Droite</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide slide3">
+
+                            <div class="content">
+                                <div class="number_img_box"> <img class="close" alt="" src="img/OUT.svg">
+                                    <div class="number_format_box"> <img alt="" src="img/number_format1.png" class="number_icon">
+                                        <div class="text_box">
+                                            <div class="circle circle_valid"></div>
+                                            <p>PLAQUE HOMOLOGUÉE</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price_section">
+                                    <div class="clm">
+                                        <p class="text">LIVRAISON ESTIMÉE</p> <span class="h1">13 Septembre 2021</span>
+                                    </div>
+                                    <div class="clm">
+                                        <p class="text">PRIX TOTAL</p> <span class="h1">1000,00€</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content_overflow">
+                                <div class="box">
+                                    <div class="row"> <span class="h1">Montrer la bande</span> <label class="switch"> <input hidden type="checkbox" checked /> <span class="slider round"></span> </label></div>
+                                    <div class="row"> <span class="h1">Inverser l’emplacement</span> <label class="switch"> <input hidden type="checkbox" checked /> <span class="slider round"></span> </label></div>
+                                </div>
+                                <div class="box"> <span class="h1">Numéro de département</span><select name="season-select" id="default-select2">
+                                        <option value="74 - Haute-Savoie">74 - Haute-Savoie</option>
+                                        <option value="36 - Haute-Savoie">36 - Haute-Savoie</option>
+                                    </select></div>
+                                <div class="box pictogramme_box"> <span class="h1">Pictogramme Région</span>
                                     <div class="select_box">
                                         <p class="text">Format .JPG ou .PNG. | Taille maximale : 2Mo</p>
                                     </div>
@@ -761,473 +286,950 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="swiper-slide slide slide4">
+                            <div class="content">
+                                <div class="number_img_box"> <img class="close" alt="" src="img/OUT.svg">
+                                    <div class="number_format_box"> <img alt="" src="img/number_format1.png" class="number_icon">
+                                        <div class="text_box">
+                                            <div class="circle circle_valid2"></div>
+                                            <p>PLAQUE HOMOLOGUÉE</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price_section">
+                                    <div class="clm">
+                                        <p class="text">LIVRAISON ESTIMÉE</p> <span class="h1">13 Septembre 2021</span>
+                                    </div>
+                                    <div class="clm">
+                                        <p class="text">PRIX TOTAL</p> <span class="h1">1000,00€</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content_overflow">
+                                <div class="box"> <span class="h1">Couleur de fond : bande gauche</span>
+                                    <div class="select_box">
+                                        <div class="color_box color_box1_slide4"></div>
+                                        <p class="text">: Couleurs homologuées</p>
+                                    </div>
+                                    <div class="splide color_slider" id="color_slider1_slide4">
+                                        <div class="splide__track">
+
+                                            <ul class="splide__list">
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1" style="background: #78D358">
+                                                        <div class="border_box" style="background: white"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #E0E0E0"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #F2994A"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #2D9CDB"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: black"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #E0E0E0"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #EB8383"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #4F4F4F"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #5B40D7"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #E0E0E0"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #41CCA2"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #E85F62"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #56CCF2"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #BB6BD9"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #BDBDBD"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #27AE60"></div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box"> <span class="h1">Couleur : initiales pays</span>
+                                    <div class="select_box">
+                                        <div class="color_box color_box2_slide4"></div>
+                                        <p class="text">: Couleurs homologuées</p>
+                                    </div>
+                                    <div class="splide color_slider" id="color_slider2_slide4">
+                                        <div class="splide__track">
+
+                                            <ul class="splide__list">
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1" style="background: #78D358">
+                                                        <div class="border_box" style="background: white"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #E0E0E0"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #F2994A"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #2D9CDB"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: black"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #E0E0E0"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #EB8383"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #4F4F4F"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #5B40D7"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #E0E0E0"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #41CCA2"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #E85F62"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #56CCF2"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #BB6BD9"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #BDBDBD"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #27AE60"></div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide slide slide5">
+                            <div class="content">
+                                <div class="number_img_box"> <img class="close" alt="" src="img/OUT.svg">
+                                    <div class="number_format_box"> <img alt="" src="img/number_format1.png" class="number_icon">
+                                        <div class="text_box">
+                                            <div class="circle circle_valid3"></div>
+                                            <p>PLAQUE HOMOLOGUÉE</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price_section">
+                                    <div class="clm">
+                                        <p class="text">LIVRAISON ESTIMÉE</p> <span class="h1">13 Septembre 2021</span>
+                                    </div>
+                                    <div class="clm">
+                                        <p class="text">PRIX TOTAL</p> <span class="h1">1000,00€</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content_overflow">
+                                <div class="box"> <span class="h1">Couleur de fond : bande gauche</span>
+                                    <div class="select_box">
+                                        <div class="color_box color_box1_slide5"></div>
+                                        <p class="text">: Couleurs homologuées</p>
+                                    </div>
+                                    <div class="splide color_slider" id="color_slider1_slide5">
+                                        <div class="splide__track">
+
+                                            <ul class="splide__list">
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1" style="background: #78D358">
+                                                        <div class="border_box" style="background: white"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #E0E0E0"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #F2994A"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #2D9CDB"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: black"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #E0E0E0"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #EB8383"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #4F4F4F"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #5B40D7"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #E0E0E0"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #41CCA2"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #E85F62"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #56CCF2"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #BB6BD9"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #BDBDBD"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #27AE60"></div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box"> <span class="h1">Couleur : numéro département</span>
+                                    <div class="select_box">
+                                        <div class="color_box color_box2_slide5"></div>
+                                        <p class="text">: Couleurs homologuées</p>
+                                    </div>
+                                    <div class="splide color_slider" id="color_slider2_slide5">
+                                        <div class="splide__track">
+                                            <ul class="splide__list">
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1" style="background: #78D358">
+                                                        <div class="border_box" style="background: white"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #E0E0E0"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #F2994A"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #2D9CDB"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: black"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #E0E0E0"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #EB8383"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #4F4F4F"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #5B40D7"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #E0E0E0"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #41CCA2"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #E85F62"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #56CCF2"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #BB6BD9"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #BDBDBD"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #27AE60"></div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide slide slide6">
+                            <div class="content">
+                                <div class="number_img_box"> <img class="close" alt="" src="img/OUT.svg">
+                                    <div class="number_format_box"> <img alt="" src="img/number_format1.png" class="number_icon">
+                                        <div class="text_box">
+                                            <div class="circle circle_valid"></div>
+                                            <p>PLAQUE HOMOLOGUÉE</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price_section">
+                                    <div class="clm">
+                                        <p class="text">LIVRAISON ESTIMÉE</p> <span class="h1">13 Septembre 2021</span>
+                                    </div>
+                                    <div class="clm">
+                                        <p class="text">PRIX TOTAL</p> <span class="h1">1000,00€</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content_overflow">
+                                <div class="box texting_box"> <span class="h1">Entrez votre texte</span>
+                                    <div class="select_box">
+                                        <p class="text">Max 60 caractères</p>
+                                    </div>
+                                    <div class="textarea_box"><textarea class="textarea"></textarea>
+                                        <div class="bg_box">
+                                            <div class="font_box">
+                                                <div class="a_class"><img alt="" src="img/a.svg"></div> <select name="season-select" id="default-select3">
+                                                    <option value="Montserrat">Montserrat</option>
+                                                    <option value="Chalkduster">Chalkduster</option>
+                                                </select>
+                                            </div>
+                                            <p class="p underline_style"><img alt="" src="img/a.svg"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="desctop_hr">
+                                <div class="desctop_row">
+                                    <div class="box box_gauche"> <span class="h1">Pictogramme Gauche</span>
+                                        <div class="select_box">
+                                            <p class="text">Format .JPG ou .PNG. | Taille maximale : 2Mo</p>
+                                        </div>
+                                        <div class="btn_box"> <button class="importer btn_violet">IMPORTER </button> <button class="rechercher btn_violet">RECHERCHER</button></div>
+                                    </div>
+                                    <div class="box box_droite"> <span class="h1">Pictogramme Droite</span>
+                                        <div class="select_box">
+                                            <p class="text">Format .JPG ou .PNG. | Taille maximale : 2Mo</p>
+                                        </div>
+                                        <div class="btn_box"> <button class="importer btn_violet">IMPORTER </button> <button class="rechercher btn_violet">RECHERCHER</button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide slide7">
+                            <div class="content">
+                                <div class="number_img_box"> <img class="close" alt="" src="img/OUT.svg">
+                                    <div class="number_format_box"> <img alt="" src="img/number_format1.png" class="number_icon">
+                                        <div class="text_box">
+                                            <div class="circle circle_valid"></div>
+                                            <p>PLAQUE HOMOLOGUÉE</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price_section">
+                                    <div class="clm">
+                                        <p class="text">LIVRAISON ESTIMÉE</p> <span class="h1">13 Septembre 2021</span>
+                                    </div>
+                                    <div class="clm">
+                                        <p class="text">PRIX TOTAL</p> <span class="h1">1000,00€</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content_overflow">
+                                <div class="box"> <span class="h1">Couleur : liseré intérieur</span>
+                                    <div class="select_box">
+                                        <div class="color_box color_box1_slide7"></div>
+                                        <p class="text">: Couleurs homologuées</p>
+                                    </div>
+                                    <div class="splide color_slider" id="color_slider1_slide7">
+                                        <div class="splide__track">
+                                            <ul class="splide__list">
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1" style="background: #78D358">
+                                                        <div class="border_box" style="background-color: #FFFFFF"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #E0E0E0"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #F2994A"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #2D9CDB"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: black"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #E0E0E0"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #EB8383"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #4F4F4F"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #5B40D7"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #E0E0E0"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #41CCA2"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #E85F62"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #56CCF2"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #BB6BD9"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #BDBDBD"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #27AE60"></div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box"> <span class="h1">Couleur : liseré extérieur</span>
+                                    <div class="select_box">
+                                        <div class="color_box color_box2_slide7"></div>
+                                        <p class="text">: Couleurs homologuées</p>
+                                    </div>
+                                    <div class="splide color_slider" id="color_slider2_slide7">
+                                        <div class="splide__track">
+                                            <ul class="splide__list">
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1" style="background: #78D358">
+                                                        <div class="border_box" style="background-color: #FFFFFF"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #E0E0E0"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #F2994A"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #2D9CDB"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: black"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #E0E0E0"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #EB8383"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #4F4F4F"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #5B40D7"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #E0E0E0"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #41CCA2"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #E85F62"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #56CCF2"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #BB6BD9"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #BDBDBD"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #27AE60"></div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide slide8">
+                            <div class="content">
+                                <div class="number_img_box"> <img class="close" alt="" src="img/OUT.svg">
+                                    <div class="number_format_box"> <img alt="" src="img/number_format1.png" class="number_icon">
+                                        <div class="text_box">
+                                            <div class="circle circle_valid4"></div>
+                                            <p>PLAQUE HOMOLOGUÉE</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price_section">
+                                    <div class="clm">
+                                        <p class="text">LIVRAISON ESTIMÉE</p> <span class="h1">13 Septembre 2021</span>
+                                    </div>
+                                    <div class="clm">
+                                        <p class="text">PRIX TOTAL</p> <span class="h1">1000,00€</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content_overflow">
+                                <div class="box"> <span class="h1">Couleur de fond : plaque</span>
+                                    <div class="select_box">
+                                        <div class="color_box color_box_slide8"></div>
+                                        <p class="text">: Couleurs homologuées</p>
+                                    </div>
+                                    <div class="splide color_slider" id="color_slider_slide8">
+                                        <div class="splide__track">
+                                            <ul class="splide__list">
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1" style="background: #78D358">
+                                                        <div class="border_box" style="background: white"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #E0E0E0"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #F2994A"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #2D9CDB"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: black"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #E0E0E0"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #EB8383"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #4F4F4F"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #5B40D7"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #E0E0E0"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #41CCA2"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #E85F62"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #56CCF2"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #BB6BD9"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #BDBDBD"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class=" slide_circle slide_circle1">
+                                                        <div class="border_box" style="background: #27AE60"></div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="desctop_hr">
+                                <div class="box"> <span class="h1">Image de fond : plaque</span>
+                                    <div class="select_box">
+                                        <p class="text">Format .JPG ou .PNG. | Taille maximale : 2Mo</p>
+                                    </div>
+                                    <div class="btn_box"> <button class="importer btn_violet">IMPORTER </button> <button class="rechercher btn_violet">RECHERCHER</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide slide9">
+                            <div class="content">
+                                <div class="number_img_box"> <img class="close" alt="" src="img/OUT.svg">
+                                    <div class="number_format_box"> <img alt="" src="img/number_format1.png" class="number_icon">
+                                        <div class="text_box">
+                                            <div class="circle circle_valid"></div>
+                                            <p>PLAQUE HOMOLOGUÉE</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price_section">
+                                    <div class="clm">
+                                        <p class="text">LIVRAISON ESTIMÉE</p> <span class="h1">13 Septembre 2021</span>
+                                    </div>
+                                    <div class="clm">
+                                        <p class="text">PRIX TOTAL</p> <span class="h1">1000,00€</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content_overflow">
+                                <div class="box"> <span class="h1">Sélectionnez vos options</span>
+                                    <div class="row">
+                                        <div class="img_box"><img alt="" src="img/rivet.svg"></div>
+                                        <div class="text_info"> <span class="h1">Rivets</span>
+                                            <p class="p">+1,5€ / plaque</p>
+                                            <p class="title">Donec ullamcorper nulla non metus auctor fringilla.</p>
+                                        </div> <label class="switch"> <input hidden type="checkbox" checked class="check_rivets" /> <span class="slider round"></span> </label>
+                                    </div>
+                                    <div class="row">
+                                        <div class="img_box"> <img alt="" src="img/diamond.svg"></div>
+                                        <div class="text_info"> <span class="h1">Finition Luxe</span>
+                                            <p class="p">+1,5€ / plaque</p>
+                                            <p class="title">Donec ullamcorper nulla non metus auctor fringilla.</p>
+                                        </div> <label class="switch"> <input hidden type="checkbox" checked class="check_luse" /> <span class="slider round"></span> </label>
+                                    </div>
+                                </div>
+                                <hr class="desctop_hr">
+                                <div class="box pictogramme_box"> <span class="h1">Professionnel ? Contactez-nous !</span>
+                                    <p class="text">Nous sommes à votre disposition <br> pour répondre à vos demandes spécifiques</p>
+                                    <div class="btn_box"> <button class="write_us btn_violet">NOUS ÉCRIRE</button></div>
+                                </div>
+                            </div>
+
+                        </div>
+
                     </div>
-                    <div class="swiper-slide slide slide7">
-                        <div class="content">
-                            <div class="number_img_box"> <img class="close" alt="" src="img/OUT.svg">
-                                <div class="number_format_box"> <img alt="" src="img/number_format1.png" class="number_icon">
-                                    <div class="text_box">
-                                        <div class="circle circle_valid"></div>
-                                        <p>PLAQUE HOMOLOGUÉE</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="price_section">
-                                <div class="clm">
-                                    <p class="text">LIVRAISON ESTIMÉE</p> <span class="h1">13 Septembre 2021</span>
-                                </div>
-                                <div class="clm">
-                                    <p class="text">PRIX TOTAL</p> <span class="h1">1000,00€</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="content_overflow">
-                            <div class="box"> <span class="h1">Couleur : liseré intérieur</span>
-                                <div class="select_box">
-                                    <div class="color_box color_box1_slide7"></div>
-                                    <p class="text">: Couleurs homologuées</p>
-                                </div>
-                                <div class="splide color_slider" id="color_slider1_slide7">
-                                    <div class="splide__track">
-                                        <ul class="splide__list">
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1" style="background: #78D358">
-                                                    <div class="border_box" style="background-color: #FFFFFF"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #E0E0E0"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #F2994A"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #2D9CDB"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: black"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #E0E0E0"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #EB8383"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #4F4F4F"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #5B40D7"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #E0E0E0"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #41CCA2"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #E85F62"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #56CCF2"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #BB6BD9"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #BDBDBD"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #27AE60"></div>
-                                                </div>
-                                            </li>
-                                        </ul>
 
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="box"> <span class="h1">Couleur : liseré extérieur</span>
-                                <div class="select_box">
-                                    <div class="color_box color_box2_slide7"></div>
-                                    <p class="text">: Couleurs homologuées</p>
-                                </div>
-                                <div class="splide color_slider" id="color_slider2_slide7">
-                                    <div class="splide__track">
-                                        <ul class="splide__list">
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1" style="background: #78D358">
-                                                    <div class="border_box" style="background-color: #FFFFFF"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #E0E0E0"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #F2994A"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #2D9CDB"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: black"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #E0E0E0"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #EB8383"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #4F4F4F"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #5B40D7"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #E0E0E0"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #41CCA2"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #E85F62"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #56CCF2"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #BB6BD9"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #BDBDBD"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #27AE60"></div>
-                                                </div>
-                                            </li>
-                                        </ul>
-
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide slide slide8">
-                        <div class="content">
-                            <div class="number_img_box"> <img class="close" alt="" src="img/OUT.svg">
-                                <div class="number_format_box"> <img alt="" src="img/number_format1.png" class="number_icon">
-                                    <div class="text_box">
-                                        <div class="circle circle_valid4"></div>
-                                        <p>PLAQUE HOMOLOGUÉE</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="price_section">
-                                <div class="clm">
-                                    <p class="text">LIVRAISON ESTIMÉE</p> <span class="h1">13 Septembre 2021</span>
-                                </div>
-                                <div class="clm">
-                                    <p class="text">PRIX TOTAL</p> <span class="h1">1000,00€</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="content_overflow">
-                            <div class="box"> <span class="h1">Couleur de fond : plaque</span>
-                                <div class="select_box">
-                                    <div class="color_box color_box_slide8"></div>
-                                    <p class="text">: Couleurs homologuées</p>
-                                </div>
-                                <div class="splide color_slider" id="color_slider_slide8">
-                                    <div class="splide__track">
-                                        <ul class="splide__list">
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1" style="background: #78D358">
-                                                    <div class="border_box" style="background: white"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #E0E0E0"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #F2994A"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #2D9CDB"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: black"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #E0E0E0"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #EB8383"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #4F4F4F"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #5B40D7"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #E0E0E0"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #41CCA2"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #E85F62"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #56CCF2"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #BB6BD9"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #BDBDBD"></div>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class=" slide_circle slide_circle1">
-                                                    <div class="border_box" style="background: #27AE60"></div>
-                                                </div>
-                                            </li>
-                                        </ul>
-
-
-                                    </div>
-                                </div>
-                            </div>
-                            <hr class="desctop_hr">
-                            <div class="box"> <span class="h1">Image de fond : plaque</span>
-                                <div class="select_box">
-                                    <p class="text">Format .JPG ou .PNG. | Taille maximale : 2Mo</p>
-                                </div>
-                                <div class="btn_box"> <button class="importer btn_violet">IMPORTER </button> <button class="rechercher btn_violet">RECHERCHER</button></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide slide slide9">
-                        <div class="content">
-                            <div class="number_img_box"> <img class="close" alt="" src="img/OUT.svg">
-                                <div class="number_format_box"> <img alt="" src="img/number_format1.png" class="number_icon">
-                                    <div class="text_box">
-                                        <div class="circle circle_valid"></div>
-                                        <p>PLAQUE HOMOLOGUÉE</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="price_section">
-                                <div class="clm">
-                                    <p class="text">LIVRAISON ESTIMÉE</p> <span class="h1">13 Septembre 2021</span>
-                                </div>
-                                <div class="clm">
-                                    <p class="text">PRIX TOTAL</p> <span class="h1">1000,00€</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="content_overflow">
-                            <div class="box"> <span class="h1">Sélectionnez vos options</span>
-                                <div class="row">
-                                    <div class="img_box"><img alt="" src="img/rivet.svg"></div>
-                                    <div class="text_info"> <span class="h1">Rivets</span>
-                                        <p class="p">+1,5€ / plaque</p>
-                                        <p class="title">Donec ullamcorper nulla non metus auctor fringilla.</p>
-                                    </div> <label class="switch"> <input hidden type="checkbox" checked class="check_rivets" /> <span class="slider round"></span> </label>
-                                </div>
-                                <div class="row">
-                                    <div class="img_box"> <img alt="" src="img/diamond.svg"></div>
-                                    <div class="text_info"> <span class="h1">Finition Luxe</span>
-                                        <p class="p">+1,5€ / plaque</p>
-                                        <p class="title">Donec ullamcorper nulla non metus auctor fringilla.</p>
-                                    </div> <label class="switch"> <input hidden type="checkbox" checked class="check_luse" /> <span class="slider round"></span> </label>
-                                </div>
-                            </div>
-                            <hr class="desctop_hr">
-                            <div class="box pictogramme_box"> <span class="h1">Professionnel ? Contactez-nous !</span>
-                                <p class="text">Nous sommes à votre disposition <br> pour répondre à vos demandes spécifiques</p>
-                                <div class="btn_box"> <button class="write_us btn_violet">NOUS ÉCRIRE</button></div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </main>
-
+                </main>
+            </div>
             <!-- thumbs -->
-            <nav class="swiper-container gallery-thumbs secondaty_slider_box">
-                <div class="swiper-wrapper slider-nav">
-                    <div class="swiper-slide slide-btn">
-                        <div class="border_desctop_white">
-                            <div class="border_desctop"> <img alt="" src="img/slide1.svg">
-                                <p class="text">FORMAT</p>
+            <div class="for_desctop">
+                <nav class="swiper-container gallery-thumbs secondaty_slider_box">
+                    <div class="swiper-wrapper slider-nav">
+                        <div class="swiper-slide slide-btn">
+                            <div class="border_desctop_white">
+                                <div class="border_desctop"> <img alt="" src="img/slide1.svg">
+                                    <p class="text">FORMAT</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-btn">
+                            <div class="border_desctop_white">
+                                <div class="border_desctop"> <img alt="" src="img/slide2.svg">
+                                    <p class="text">NUMERO</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-btn">
+                            <div class="border_desctop_white">
+                                <div class="border_desctop"> <img alt="" src="img/slide3_1.svg">
+                                    <p class="text">PICTOS GAUCHE</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-btn">
+                            <div class="border_desctop_white">
+                                <div class="border_desctop"> <img alt="" src="img/slide3.svg">
+                                    <p class="text">PICTOS DROITE</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-btn">
+                            <div class="border_desctop_white">
+                                <div class="border_desctop"> <img alt="" src="img/slide4.svg">
+                                    <p class="text">FOND BANDE GAUCHE</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-btn">
+                            <div class="border_desctop_white">
+                                <div class="border_desctop"> <img alt="" src="img/slide5.svg">
+                                    <p class="text">FOND BANDE DROITE</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-btn">
+                            <div class="border_desctop_white">
+                                <div class="border_desctop"> <img alt="" src="img/slide6.svg">
+                                    <p class="text">MESSAGE</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-btn">
+                            <div class="border_desctop_white">
+                                <div class="border_desctop"> <img alt="" src="img/slide7.svg">
+                                    <p class="text">LISERÉS</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-btn">
+                            <div class="border_desctop_white">
+                                <div class="border_desctop"> <img alt="" src="img/slide8.svg">
+                                    <p class="text">FOND</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-btn">
+                            <div class="border_desctop_white">
+                                <div class="border_desctop"> <img alt="" src="img/slide9.svg">
+                                    <p class="text">FINITIONS</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide slide-btn">
-                        <div class="border_desctop_white">
-                            <div class="border_desctop"> <img alt="" src="img/slide2.svg">
-                                <p class="text">NUMERO</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide slide-btn">
-                        <div class="border_desctop_white">
-                            <div class="border_desctop"> <img alt="" src="img/slide3_1.svg">
-                                <p class="text">PICTOS GAUCHE</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide slide-btn">
-                        <div class="border_desctop_white">
-                            <div class="border_desctop"> <img alt="" src="img/slide3.svg">
-                                <p class="text">PICTOS DROITE</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide slide-btn">
-                        <div class="border_desctop_white">
-                            <div class="border_desctop"> <img alt="" src="img/slide4.svg">
-                                <p class="text">FOND BANDE GAUCHE</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide slide-btn">
-                        <div class="border_desctop_white">
-                            <div class="border_desctop"> <img alt="" src="img/slide5.svg">
-                                <p class="text">FOND BANDE DROITE</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide slide-btn">
-                        <div class="border_desctop_white">
-                            <div class="border_desctop"> <img alt="" src="img/slide6.svg">
-                                <p class="text">MESSAGE</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide slide-btn">
-                        <div class="border_desctop_white">
-                            <div class="border_desctop"> <img alt="" src="img/slide7.svg">
-                                <p class="text">LISERÉS</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide slide-btn">
-                        <div class="border_desctop_white">
-                            <div class="border_desctop"> <img alt="" src="img/slide8.svg">
-                                <p class="text">FOND</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide slide-btn">
-                        <div class="border_desctop_white">
-                            <div class="border_desctop"> <img alt="" src="img/slide9.svg">
-                                <p class="text">FINITIONS</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Add Arrows -->
-                <div title="next" class="swiper-button-next swiper-button-white slick-next"></div>
-                <div title="prev" class="swiper-button-prev swiper-button-white slick-prev"></div>
-                <div class="swiper-pagination slick-dots"></div>
-
+                    <!-- Add Arrows -->
+                    <div title="next" class="swiper-button-next swiper-button-white slick-next"></div>
+                    <div title="prev" class="swiper-button-prev swiper-button-white slick-prev"></div>
+                    <div class="swiper-pagination slick-dots"></div>
+                </nav>
                 <div class="btn_box">
                     <button class="annuler grey_btn btn "><img alt="" src="img/arrow_anul.svg">ANNULER</button>
                 </div>
-            </nav>
-
+            </div>
             <div class="btn_box btn_box_main">
                 <button class="annuler grey_btn btn "><img alt="" src="img/arrow_anul.svg">ANNULER</button>
                 <button class="pay green_btn btn valider"><img alt="" src="img/check.svg">VALIDER</button>

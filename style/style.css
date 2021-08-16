@@ -1620,7 +1620,7 @@ body {
     width: 100%
 }
 
-.secondaty_slider_box .btn_box_main {
+.for_desctop .btn_box_main {
     display: none
 }
 
@@ -1631,8 +1631,20 @@ body {
     overflow-y: auto;
 }
 
+.slide1 .content_overflow {
+    height: auto;
+}
+
 .slide-container_over {
     overflow-y: auto;
+}
+
+.for_desctop .content {
+    display: none;
+}
+
+.for_desctop .slide .content {
+    display: flex;
 }
 
 @media all and (min-width:1025px) {
@@ -1684,18 +1696,17 @@ body {
 
     .slide {
         background-color: #F9F9F9;
-        /*        overflow-y: auto*/
         overflow-y: hidden
     }
 
     .payer {
         display: flex;
         width: 330px;
+        min-width: 330px;
         height: calc(100vh - 80px);
         justify-content: flex-start;
         background-color: transparent;
-        overflow-y: scroll;
-
+        overflow-y: auto;
     }
 
     .payer .overflow_box {
@@ -1708,10 +1719,6 @@ body {
         min-height: 594px;
         border-bottom: 1px solid rgba(0, 0, 0, 0.11);
         padding: 0;
-    }
-
-    .content_overflow {
-        /*        overflow: initial;*/
     }
 
     .payer .header,
@@ -1862,7 +1869,7 @@ body {
 
     .slide {
         align-items: center;
-        padding: 0px 0 25px
+        /*        padding: 0px 0 25px*/
     }
 
     .slide .content {
@@ -1898,12 +1905,32 @@ body {
     }
 
     .slide .number_img_box {
-        height: 225px;
-        display: flex;
-        padding: 0 140px;
+        display: none;
+    }
+
+    .for_desctop .content {
+        height: 255px;
+        max-height: 255px;
         border-bottom: 1px solid rgba(0, 0, 0, 0.11);
         background-color: #F9F9F9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .for_desctop .slide .content {
+        display: none;
+    }
+
+    .for_desctop .number_img_box {
+        display: flex;
+        padding: 0;
+        background-color: #F9F9F9;
         z-index: 1;
+    }
+
+    .number_img_box .number_icon {
+        max-width: 500px;
     }
 
     .content_overflow {
@@ -1912,8 +1939,8 @@ body {
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-/*        min-height: fit-content;*/
-        overflow: scroll;
+        overflow-x: hidden;
+        overflow-y: auto;
     }
 
     .slide1 .number_img_box {
@@ -2125,16 +2152,17 @@ body {
 
     .secondaty_slider_box {
         width: 330px;
+        min-width: 330px;
         height: calc(100vh - 200px);
+        max-height: 594px;
         display: flex;
         flex-direction: column;
         margin: 0;
         background-color: white;
         position: relative;
-        overflow: initial;
+        overflow: hidden;
     }
 
-    .secondaty_slider_box .btn_box_main {}
 
     .select_box {
         margin: 3px 0 0
@@ -2335,10 +2363,16 @@ body {
     .payer .overflow_box,
     .payer {
         width: 260px;
+        min-width: 260px;
+    }
+
+    .secondaty_slider_box {
+        width: 260px;
+        min-width: 260px;
     }
 
     .slider-for {
-        width: calc(100vw - 590px);
+        width: calc(100vw - 520px);
     }
 
     .payer .desctop_info {
@@ -2371,6 +2405,12 @@ body {
 
     .slide9 .box {
         flex-direction: column;
+    }
+}
+
+@media all and (min-width:1025px) and (max-height:840px) {
+    .for_desctop .content {
+        height: auto;
     }
 }
 
@@ -2420,7 +2460,19 @@ body {
     .slide7 .box:last-of-type {
         padding: 25px 0px 0
     }
+
 }
+
+@media all and (min-width:1025px) and (max-height:730px) {
+    .slider-for {
+        height: calc(100vh - 80px - 167px);
+    }
+
+    .slide {
+/*        padding: 0px 0 25px*/
+    }
+}
+
 
 @media (max-width: 1366px) and (min-width: 1110px) {
     .number_img_box .number_icon {
@@ -2506,6 +2558,34 @@ body {
 
     .slider-nav .slick-list {
         height: 400px !important;
+    }
+}
+
+@media all and (min-width:1280px) and (max-height:650px) {
+    .slide .content_overflow {
+        padding: 0 0 50px;
+    }
+
+    .slide2 {
+        padding: 0 0 100px;
+    }
+
+    .slide2 .content_overflow {
+        padding: 0 0 200px;
+    }
+
+    .slide7 .content_overflow {
+        padding: 0 0 100px;
+    }
+
+    .slide6 .desctop_row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slide6 .box_gauche,
+    .slide6 .box_droite {
+        width: 100%;
     }
 }
 

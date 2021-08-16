@@ -77,7 +77,7 @@ format2.forEach(item => {
     })
 })
 
-
+const main_circle = document.querySelector('.for_desctop #main_circle')
 
 const back_color = document.querySelectorAll('#color_slider_slide2 .slide_circle')
 const background_color = document.querySelectorAll('#color_slider_slide2 .border_box')
@@ -95,8 +95,10 @@ back_color.forEach(item => {
         item.classList.add('border')
         if (color_box.style.background == 'black') {
             circle_valid1.style.backgroundColor = '#78D358'
+            main_circle.style.backgroundColor = '#78D358'
         } else {
             circle_valid1.style.backgroundColor = '#E0E0E0'
+            main_circle.style.backgroundColor = '#E0E0E0'
         }
 
     })
@@ -116,23 +118,31 @@ back_color2.forEach(item => {
 
         if (color_box2.style.background == 'rgb(45, 156, 219)') {
             circle_valid2.style.backgroundColor = '#78D358'
+            main_circle.style.backgroundColor = '#78D358'
             circle_valid2.classList.add('green')
+            main_circle.classList.add('green')
         } else {
             circle_valid2.style.backgroundColor = '#E0E0E0'
+            main_circle.style.backgroundColor = '#E0E0E0'
             circle_valid2.classList.remove('green')
+            main_circle.classList.remove('green')
         }
 
 
         if (circle_valid2.classList.contains('green') && circle_valid2.classList.contains('green2')) {
             circle_valid2.style.backgroundColor = '#78D358'
+            main_circle.style.backgroundColor = '#78D358'
         } else {
             circle_valid2.style.backgroundColor = '#E0E0E0'
+            main_circle.style.backgroundColor = '#E0E0E0'
         }
 
         if (circle_valid2.classList.contains('green')) {
             circle_valid2.style.backgroundColor = '#78D358'
+            main_circle.style.backgroundColor = '#78D358'
         } else {
             circle_valid2.style.backgroundColor = '#E0E0E0'
+            main_circle.style.backgroundColor = '#E0E0E0'
         }
     })
 })
@@ -150,17 +160,23 @@ back_color3.forEach(item => {
 
         if (color_box3.style.background == 'white') {
             circle_valid2.style.backgroundColor = '#78D358'
+            main_circle.style.backgroundColor = '#78D358'
             circle_valid2.classList.add('green2')
+            main_circle.classList.add('green2')
         } else {
             circle_valid2.style.backgroundColor = '#E0E0E0'
+            main_circle.style.backgroundColor = '#E0E0E0'
             circle_valid2.classList.remove('green2')
+            main_circle.classList.remove('green2')
         }
 
 
         if (circle_valid2.classList.contains('green2')) {
             circle_valid2.style.backgroundColor = '#78D358'
+            main_circle.style.backgroundColor = '#78D358'
         } else {
             circle_valid2.style.backgroundColor = '#E0E0E0'
+            main_circle.style.backgroundColor = '#E0E0E0'
         }
 
     })
@@ -179,13 +195,17 @@ back_color4.forEach(item => {
         item.classList.add('border')
         if (color_box4.style.background == 'rgb(45, 156, 219)') {
             circle_valid3.classList.add('green')
+            main_circle.classList.add('green')
         } else {
             circle_valid3.classList.remove('green')
+            main_circle.classList.remove('green')
         }
         if (circle_valid3.classList.contains('green')) {
             circle_valid3.style.backgroundColor = '#78D358'
+            main_circle.style.backgroundColor = '#78D358'
         } else {
             circle_valid3.style.backgroundColor = '#E0E0E0'
+            main_circle.style.backgroundColor = '#E0E0E0'
         }
     })
 })
@@ -203,13 +223,17 @@ back_color5.forEach(item => {
 
         if (color_box5.style.background == 'white') {
             circle_valid3.classList.add('green2')
+            main_circle.classList.add('green2')
         } else {
             circle_valid3.classList.remove('green2')
+            main_circle.classList.remove('green2')
         }
         if (circle_valid3.classList.contains('green2')) {
             circle_valid3.style.backgroundColor = '#78D358'
+            main_circle.style.backgroundColor = '#78D358'
         } else {
             circle_valid3.style.backgroundColor = '#E0E0E0'
+            main_circle.style.backgroundColor = '#E0E0E0'
         }
     })
 })
@@ -255,10 +279,14 @@ back_color8.forEach(item => {
 
         if (color_box8.style.background == 'white') {
             circle_valid4.style.backgroundColor = '#78D358'
-            circle_valid4.classList.add('green')
+            main_circle.style.backgroundColor = '#78D358'
+//            circle_valid4.classList.add('green')
+//            main_circle.classList.add('green')
         } else {
             circle_valid4.style.backgroundColor = '#E0E0E0'
-            circle_valid4.classList.remove('green')
+            main_circle.style.backgroundColor = '#E0E0E0'
+//            circle_valid4.classList.remove('green')
+//            main_circle.classList.remove('green')
         }
     })
 })
@@ -684,7 +712,7 @@ document.documentElement.style.setProperty('--vh', `${vh}px`);
 
 // We listen to the resize event
 window.addEventListener('resize', () => {
-  // We execute the same script as before
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
+    // We execute the same script as before
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
