@@ -186,6 +186,10 @@
 }
 
 @media all and (min-width: 1025px) {
+   .slider-for .swiper-slide-active
+    {
+        z-index: 1;
+    }
     .slider-nav .slick-slide {
         max-width: 100% !important;
     }
