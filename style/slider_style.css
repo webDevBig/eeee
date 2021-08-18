@@ -185,13 +185,6 @@
     display: none;
 }
 
-/*
-
-.swiper-container-vertical > .swiper-wrapper {
-    flex-direction: row;
-}
-*/
-
 @media all and (min-width: 1025px) {
 
     .slider-for .swiper-slide-active {
